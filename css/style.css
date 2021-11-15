@@ -1,0 +1,38 @@
+.grandfather_box{
+    border: 2px hsl(225, 100%, 98%) solid;
+    border-radius: 20px;
+    
+}
+
+
+.image_box{
+    
+}
+
+#tittle_box{
+    text-align: center;
+}
+
+
+.text_box{
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.father_box{
+    display: flex;
+    justify-content: space-around
+}
+
+.ringtone_box{
+
+}
+
+.text_box2{
+
+}
+
+.text_box2_text{
+    color: red;
+}
