@@ -1,38 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+    width: 100%;
+    background-color: grey;
+}
+
 .grandfather_box{
-    border: 2px hsl(225, 100%, 98%) solid;
+    display: flex;
+    flex-direction: column;
+    border: 2px var(--Pale-blue) solid;
     border-radius: 20px;
-    
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
 }
 
-
-.image_box{
-    
+.image_box img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
 }
 
-#tittle_box{
+.contenedor_text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.tittle_box h2{
     text-align: center;
+    font-family: "Red Hat Display";
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin: 30px 0px;
 }
 
 
-.text_box{
+.text_box p{
     font-size: 16px;
     text-align: center;
+    font-family: "Red Hat Display";
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+    margin: 0px 30px 30px 30px;
 
 }
 
 .father_box{
+    background-color: var(--Pale-blue);
+    border-radius: 15px;
+    padding: 10px;
     display: flex;
-    justify-content: space-around
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    font-family: "Red Hat Display";
 }
 
 .ringtone_box{
-
-}
-
-.text_box2{
-
+    display: flex;
+    flex-direction: row;
 }
 
 .text_box2_text{
-    color: red;
+    color:var(--Dark-blue);
+    font-weight: 900;
 }
+
+.text_box2_text2{
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#button1{
+    border: 2px solid var(--Bright-blue);
+    background-color: var(--Bright-blue);
+    color: var(--Pale-blue);
+    margin: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 20px 90px 20px 90px;
+    font-family: "Red Hat Display";
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#button1:hover{
+    background-color: var(--Desaturated-blue);
+    border: 2px solid var(--Desaturated-blue);
+}
+
+#button2{
+    font-family: "Red Hat Display";
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+    background: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#button2:hover{
+    color: var(--Dark-blue);
+}
+
